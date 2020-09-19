@@ -12,6 +12,7 @@ def sol(N, organisms):
         if new_x == 0 or new_y ==0 or new_x == N-1 or new_y == N-1:
             new_d = d + 1 if d % 2 ==0 else d - 1
             new_c = c //2
+            
         if new_c > 0:
             if (new_x,new_y) not in dic:
                 dic[(new_x,new_y)] = (new_c, new_d, new_c)
