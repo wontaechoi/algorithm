@@ -17,6 +17,7 @@ def solution(numbers):
         number.append(c)
     count = 0
     checked = []
+    
     for i in range(1, len(numbers) + 1):
         x = list(permutations(number, i))
         for c in x:
